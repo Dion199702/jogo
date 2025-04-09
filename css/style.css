@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+h1, h2 {
+    color: #333;
+}
+.personagens img {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.personagens img:hover {
+    transform: scale(1.1);
+}
+#personagem-animada img {
+    width: 200px;
+    animation: pular 1s ease-in-out;
+}
+@keyframes pular {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
