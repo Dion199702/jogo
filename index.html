@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Científica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="tela-inicial">
+        <h1>Missão Científica 🧪</h1>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" />
+        <h2>Escolha sua personagem:</h2>
+        <div class="personagens">
+            <img src="images/mariana.png" alt="Mariana" onclick="escolherPersonagem('Mariana')">
+            <img src="images/vitoria.png" alt="Vitória" onclick="escolherPersonagem('Vitória')">
+            <img src="images/edleuza.png" alt="Edleuza" onclick="escolherPersonagem('Edleuza')">
+        </div>
+        <button onclick="iniciarJogo()">Iniciar Jogo</button>
+    </div>
+
+    <div id="jogo" style="display: none;">
+        <h2 id="fase-titulo"></h2>
+        <p id="pergunta"></p>
+        <div id="alternativas"></div>
+        <div id="personagem-animada"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
